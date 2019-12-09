@@ -166,7 +166,7 @@ var calculadora = {
 	},
 	
 	mostrarenPantalla: function(valor){
-		if (this.valorPantalla.length < 9) {
+		if (this.valorPantalla.length < 8) {
 		
 			if (this.valorPantalla=="0") {
 				this.valorPantalla = "";
@@ -200,7 +200,7 @@ var calculadora = {
 		this.operando_1 = this.resultado;
 		this.valorPantalla = "";
 	
-		if (this.resultado.toString().length < 9){
+		if (this.resultado.toString().length < 8){
 			this.valorPantalla = this.resultado.toString();
 		} else {
 			this.valorPantalla = this.resultado.toString().slice(0,9);
